@@ -9,12 +9,11 @@ spring:
     gateway:
       routes:
         - id: task-service
-          uri:
-            http://localhost:9095
+          uri: lb://TASK-SERVICE
           predicates:
-            - Path=/v3/api-docs/task-service, api/v1/**
+            - Path=/v3/api-docs/task-service
           filters:
-            - RewritePath=/v3/api-docs/task-service,/v3/api-docs, api/v1/**
+            - RewritePath=/v3/api-docs/task-service,/v3/api-docs
 
         - id: keycloak-admin-client-docs
           uri:
