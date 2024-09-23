@@ -25,13 +25,5 @@ springdoc:
       client-id: client11
       client-secret: 6scaeZzZ24UTDFDTPqrche49u8ud5GPP
       realm: realm-2
-    tags-sorter: alpha
-logging:
-  level:
-    org.springframework.web: debug
-# eureka:
-#   client:
-#     register-with-eureka: true
-#     fetch-registry: true
-#     service-url:
-#       defaultZone: http://localhost:8761/eureka/
+
+
