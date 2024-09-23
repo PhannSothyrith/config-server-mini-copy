@@ -1,12 +1,17 @@
 spring:
+  application:
+    name: api-gateway
   cloud:
     gateway:
       routes:
         - id: task-service
           uri:
-            lb://task-service
+            http://localhost:8085
           predicates:
-            - Path=/api/v1/task/**
+            - Path=/v3/api-docs/task-service, api/v1/**
+          filters:
+            - RewritePath=/v3/api-docs/task-service,/v3/api-docs, api/v1/**
+
         - id: keycloak-admin-client-docs
           uri:
             http://localhost:8181
