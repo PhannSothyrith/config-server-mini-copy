@@ -10,7 +10,7 @@ spring:
       routes:
         - id: task-service
           uri:
-            http://localhost:8085
+            http://localhost:8084
           predicates:
             - Path=/v3/api-docs/task-service, api/v1/**
           filters:
