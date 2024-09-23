@@ -16,8 +16,6 @@ spring:
               - RewritePath=/v3/api-docs/keycloak-admin-client,/v3/api-docs, api/v1/**
   main:
     web-application-type: reactive
-
-
 server:
   port: 8084
 
