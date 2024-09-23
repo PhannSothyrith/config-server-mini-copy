@@ -18,7 +18,7 @@ spring:
 
         - id: keycloak-admin-client-docs
           uri:
-            http://localhost:8181
+            http://localhost:9092
           predicates:
               - Path=/v3/api-docs/keycloak-admin-client, api/v1/**
           filters:
