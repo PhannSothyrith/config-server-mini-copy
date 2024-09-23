@@ -9,8 +9,6 @@ spring:
         jwt:
           issuer-uri: http://localhost:8080/realms/realm-2
           jwk-set-uri: http://localhost:8080/realms/realm-2/protocol/openid-connect/certs
-  application:
-    name: keycloak-admin-client
 
 keycloak:
   realm: realm-2
