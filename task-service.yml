@@ -1,18 +1,25 @@
-server:
-  port: 9095
 spring:
-  application:
-    name: task-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/task_db
-    username: postgres
-    password: database09
   security:
     oauth2:
       resource-server:
         jwt:
           issuer-uri: http://localhost:8080/realms/realm-2
           jwk-set-uri: http://localhost:8080/realms/realm-2/protocol/openid-connect/certs
+  application:
+    name: task-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/config_mini_project
+    username: postgres
+    password:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
 
 keycloak:
   realm: realm-2
