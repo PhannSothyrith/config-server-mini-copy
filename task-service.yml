@@ -8,9 +8,9 @@ spring:
   application:
     name: task-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/config_mini_project
+    url: jdbc:postgresql://localhost:5432/task_db
     username: postgres
-    password:
+    password: database09
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
