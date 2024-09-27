@@ -8,7 +8,7 @@ spring:
   application:
     name: task-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/task-service
+    url: jdbc:postgresql://localhost:5432/task_db
     username: postgres
     password: database09
     driver-class-name: org.postgresql.Driver
