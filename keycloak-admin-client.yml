@@ -12,7 +12,7 @@ server:
 keycloak:
   realm: realm-2
   resource: client11
-#  auth-server-url: http://localhost:8080/auth/ #docker container
+  #  auth-server-url: http://localhost:8080/auth/ #docker container
   auth-server-url: http://localhost:8080/
   credentials:
     username: 'Viseth'
